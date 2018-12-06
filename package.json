@@ -1,0 +1,29 @@
+{
+  "name": "@pcnate/repo_testing",
+  "version": "1.0.0",
+  "description": "just learning and testing ideas for releases and branching",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags && rm -rf build/temp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcnate/repo_testing.git"
+  },
+  "keywords": [],
+  "author": "Nathan Baker <pcnate@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pcnate/repo_testing/issues"
+  },
+  "homepage": "https://github.com/pcnate/repo_testing#readme",
+  "devDependencies": {
+    "npm-nomaster-commits": "^1.0.5"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "randomstring": "^1.1.5"
+  }
+}
