@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js",
     "version": "npm run build && git add -A -f dist",
-    "postversion": "git push && git push --tags && rm -rf build/temp"
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
