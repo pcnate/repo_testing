@@ -3,10 +3,11 @@
   "version": "1.1.0",
   "description": "just learning and testing ideas for releases and branching",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Success: No test specified, emulating a pass\" && exit 0",
     "build": "node build.js",
-    "version": "npm run build && git add -A dist",
-    "postversion": "git push && git push --tags && npm publish"
+    "version": "npm run test && npm run build && git add -A dist",
+    "postversion": "git push && git push --tags",
+    "postversionold": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
